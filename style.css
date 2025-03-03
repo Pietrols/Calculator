@@ -76,16 +76,12 @@ button:hover {
 .add,
 .subtract,
 .multiply,
-.divide {
+.divide,
+.sign {
   background-color: #95a5a6;
   color: white;
 }
 
 .zero {
   width: 130px;
-}
-
-.squareRoot,
-.sign {
-  background-color: lightblue;
 }

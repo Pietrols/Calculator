@@ -16,7 +16,7 @@ const squareRoot = (num1) => Math.sqrt(num1);
 function operate(num1, operator, num2) {
   if (operator === "+") return add(num1, num2);
   if (operator === "-") return subtract(num1, num2);
-  if (operator === "X") return multiply(num1, num2);
+  if (operator === "*") return multiply(num1, num2);
   if (operator === "/") return divide(num1, num2);
   if (operator === "sqrt") return squareRoot(num1);
   return "Error: Invalid operator";
@@ -46,8 +46,6 @@ function buttonHandling(event) {
     handleEqual();
   } else if (btnKey === "+/-") {
     handleSign();
-  } else if (btnKey === "sqrt") {
-    handleSquareRoot();
   } else if ("+-*/".includes(btnKey)) {
     handleOperator(btnKey);
   } else {
